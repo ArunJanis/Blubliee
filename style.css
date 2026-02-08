@@ -146,3 +146,32 @@ span {
   opacity: 0.8;
   transform: scale(1.2);
 }
+#music-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #0b0033, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#start-btn {
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #6fa8ff, #9b59ff);
+  color: white;
+  box-shadow: 0 0 30px rgba(111,168,255,0.8);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
