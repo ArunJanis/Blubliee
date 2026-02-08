@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at bottom, #050016, #000);
+}
+
+body {
+  background: linear-gradient(120deg, #1a0033, #001a33);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 3.5rem;
+  color: #6fa8ff;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #cbbcff;
+}
+
+/* Text Styling */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #6fa8ff;
+  font-weight: bold;
+}
+
+/* Photos */
+.photos {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(111,168,255,0.6);
+  transition: transform 0.5s;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+}
+
+/* Proposal */
+.proposal h1 {
+  font-size: 3.2rem;
+}
+
+.number {
+  color: #6fa8ff;
+  font-size: 4rem;
+}
+
+.name {
+  color: #9b59ff;
+}
+
+/* Final */
+.final {
+  font-size: 2.2rem;
+  font-style: italic;
+  color: #6fa8ff;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.delay {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.2s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slideshow img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(155,89,255,0.7);
+}
+
+.slideshow p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #6fa8ff;
+}
+#blue-heart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  opacity: 0.35;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#blue-heart:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
