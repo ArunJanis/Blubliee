@@ -106,4 +106,13 @@ document.getElementById("blue-heart").addEventListener("click", () => {
     heartTaps = 0; // reset so she can do it again
   }
 });
+const startBtn = document.getElementById("start-btn");
+const music = document.getElementById("bg-music");
+const overlay = document.getElementById("music-overlay");
+
+startBtn.addEventListener("click", () => {
+  music.play();
+  overlay.style.display = "none";
+});
+
 
