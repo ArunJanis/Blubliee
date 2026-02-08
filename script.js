@@ -73,11 +73,11 @@ window.addEventListener("scroll", () => {
 });
 
 const images = [
-  { src: "assets/pic1.jpg", text: "Our first selfie 💫" },
-  { src: "assets/pic2.jpg", text: "Our sneak outs 💙" },
-  { src: "assets/pic3.jpg", text: "A lovely moment🫂" },
-  { src: "assets/pic4.jpg", text: "A special Mall Date💘" },
-  { src: "assets/pic5.jpg", text: "My favorite smile 🥹" }
+  { src: "pic1.jpg", text: "Our first selfie 💫" },
+  { src: "pic2.jpg", text: "Our sneak outs 💙" },
+  { src: "pic3.jpg", text: "A lovely moment🫂" },
+  { src: "pic4.jpg", text: "A special Mall Date💘" },
+  { src: "pic5.jpg", text: "My favorite smile 🥹" }
 ];
 
 let index = 0;
@@ -106,3 +106,4 @@ document.getElementById("blue-heart").addEventListener("click", () => {
     heartTaps = 0; // reset so she can do it again
   }
 });
+
